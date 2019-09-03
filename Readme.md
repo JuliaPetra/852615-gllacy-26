@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Джулия Петроградская](https://up.htmlacademy.ru/htmlcss/26/user/852615).
-* Наставник: [Федя Базанов](https://htmlacademy.ru/profile/beacon).
+* Наставник: [Фёдор Базанов](https://htmlacademy.ru/profile/beacon).
 
 ---
 
