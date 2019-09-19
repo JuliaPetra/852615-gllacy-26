@@ -13,36 +13,35 @@
         <ul>
           <li><a href="catalog.html">Каталог</a>
             <ul>
-              <li>Сливочное</li>
-              <li>Щербеты</li>
-              <li>Фруктовый лед</li>
-              <li>Мелорин</li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
             </ul>
-           <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul>
           <li>
             <button type="button">Поиск</button>
             <form action="https://echo.htmlacademy.ru" method="get">
-              <label for="search">Поиск</label>
-                <input type="text" name="search" id="search" placeholder="крем-брюле">              
+              <label for="search" class="visually-hidden">Поиск</label>
+              <input type="text" name="search" id="search" placeholder="крем-брюле">              
             </form>
           </li> 
           <li>
             <button type="button">Вход</button>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="email"></label>
-              <input type="email" name="email" id="email" placeholder="Электронная почта">
-              <br>
-              <label for="password"></label>
-              <input type="password" name="password" id="password" placeholder="Пароль">
+              <label for="login" class="visually-hidden">Логин</label>
+              <input type="email" name="login" id="login" placeholder="email@example.com">
+              <label for="password" class="visually-hidden">Пароль</label>
+              <input type="password" name="password" id="password" placeholder="********">
               <button type="submit" value="Войти">Войти</button>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </form>
           </li>
-          <li><a href="#">Корзина</a></li>
+          <li><a href="#" aria-label="Корзина" class="visually-hidden">Пусто</a></li>
         </ul>
       </nav>
       <div>
@@ -50,11 +49,21 @@
         <a href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </header>
-    <main>
-      <h1>Магазин Глейси</h1>
+    <main>      
+      <h1 class="visually-hidden">Магазин Глейси</h1>
       <section>
         <div>
-<!--Попап-->
+          <form>
+             Мы обязательно Вам ответим!
+             <button type="reset" class="visually-hidden">Закрыть</button>
+             <label for="name" class="visually-hidden">Ваше имя</label>
+             <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+             <label for="email" class="visually-hidden">Ваша почта</label>
+             <input type="email" name="email" id="email" placeholder="email@example.com">
+             <label for="text" class="visually-hidden">Поле для текста</label>
+             <input type="text" name="text" id="text" placeholder="Напишите что-нибудь...">
+             <button type="submit">Отправить</button>
+          </form>
         </div>
         <ul>
           <li>Крем-брюле и пломбир с малиновым джемом
@@ -79,7 +88,7 @@
         <a href="#">Хочу шоколадки!</a>
       </section>
       <section>
-        <h2>Хиты магазина</h2>
+        <h2 class="visually-hidden">Хиты магазина</h2>
         <ul>
           <li>
             <img src="img/product-1-1.jpg" width="267" height="267" alt="Сливочный пломбир с апельсиновым джемом и цитрусовой стружкой">
@@ -116,7 +125,7 @@
         </ul>
       </section>
       <section>
-        <h2>Особенности производства</h2>
+        <h2 class="visually-hidden">Особенности производства</h2>
         <p>
         Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
         </p>
@@ -136,18 +145,17 @@
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
       <section>
-        <h2>Подписка на рассылку</h2>
-        <label for="subscribe">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-          всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно :)</p>
-        </label>
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+        всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно :)</p>
+        <label for="subscribe" class="visually-hidden">Подписка</label>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" name="subscribe" id="subscribe">
-          <input type="button" value="Войти">
+          <input type="email" name="subscribe" id="subscribe" placeholder="email@example.com">
+          <button type="submit">Отправить</button>
         </form>
       </section>
       <section>
-        <h2>Адрес офлайн магазина и форма обратной связи</h2>
+        <h2 class="visually-hidden">Адрес офлайн магазина и форма обратной связи</h2>
         <img src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург"> 
         <div>
           <p>Адрес главного офиса и офлайн-магазина:<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
@@ -158,10 +166,10 @@
     </main>
     <footer>
       <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Вконтакте</a></li>
+        <li><a href="#" aria-label="Глейси в Твиттере" class="visually-hidden">Твиттер</a></li>
+        <li><a href="#" aria-label="Глейси в Инстаграме" class="visually-hidden">Инстаграм</a></li>
+        <li><a href="#" aria-label="Глейси в Фейсбуке" class="visually-hidden">Фейсбук</a></li>
+        <li><a href="#" aria-label="Глейси во Вконтакте" class="visually-hidden">Вконтакте</a></li>
       </ul>
       <ul>
         <li><a href="#">Для поставщиков</a></li>
