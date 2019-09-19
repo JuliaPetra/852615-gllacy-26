@@ -52,19 +52,6 @@
     <main>      
       <h1 class="visually-hidden">Магазин Глейси</h1>
       <section>
-        <div>
-          <form>
-             Мы обязательно Вам ответим!
-             <button type="reset" class="visually-hidden">Закрыть</button>
-             <label for="name" class="visually-hidden">Ваше имя</label>
-             <input type="text" name="name" id="name" placeholder="Как вас зовут?">
-             <label for="email" class="visually-hidden">Ваша почта</label>
-             <input type="email" name="email" id="email" placeholder="email@example.com">
-             <label for="text" class="visually-hidden">Поле для текста</label>
-             <input type="text" name="text" id="text" placeholder="Напишите что-нибудь...">
-             <button type="submit">Отправить</button>
-          </form>
-        </div>
         <ul>
           <li>Крем-брюле и пломбир с малиновым джемом
             <a href="#">Давайте оба!</a>
@@ -162,14 +149,27 @@
           Для заказов по телефону:<a href="tel:88124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)</p>
           <a href="#">Форма обратной связи</a>
         </div>
+        <div>
+          <form action="action=https://echo.htmlacademy.ru" method="post">
+             Мы обязательно Вам ответим!
+             <button type="reset" aria-label="Закрыть окно обратной связи"></button>
+             <label for="name" class="visually-hidden">Ваше имя</label>
+             <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+             <label for="email" class="visually-hidden">Ваша почта</label>
+             <input type="email" name="email" id="email" placeholder="email@example.com">
+             <label for="text" class="visually-hidden">Поле для текста</label>
+             <input type="text" name="text" id="text" placeholder="Напишите что-нибудь...">
+             <button type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
       <ul>
-        <li><a href="#" aria-label="Глейси в Твиттере" class="visually-hidden">Твиттер</a></li>
-        <li><a href="#" aria-label="Глейси в Инстаграме" class="visually-hidden">Инстаграм</a></li>
-        <li><a href="#" aria-label="Глейси в Фейсбуке" class="visually-hidden">Фейсбук</a></li>
-        <li><a href="#" aria-label="Глейси во Вконтакте" class="visually-hidden">Вконтакте</a></li>
+        <li><a href="#" aria-label="Глейси в Твиттере" class="visually-hidden"></a></li>
+        <li><a href="#" aria-label="Глейси в Инстаграме" class="visually-hidden"></a></li>
+        <li><a href="#" aria-label="Глейси в Фейсбуке" class="visually-hidden"></a></li>
+        <li><a href="#" aria-label="Глейси во Вконтакте" class="visually-hidden"></a></li>
       </ul>
       <ul>
         <li><a href="#">Для поставщиков</a></li>
