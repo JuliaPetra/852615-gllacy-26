@@ -11,23 +11,61 @@
           <img src="img/icons/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
         </a>
         <ul>
-          <li><a href="catalog.html" aria-label="Каталог">Каталог</a></li>
-          <li><a href="#" aria-label="Доставка и оплата">Доставка и оплата</a></li>
-          <li><a href="#" aria-label="О компании">О Компании</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
         </ul>
         <ul>
           <li>
             <button type="button">Поиск</button>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label for="search" class="visually-hidden">Поиск</label>
+              <input type="text" name="search" id="search" placeholder="крем-брюле">              
+            </form>
           </li> 
           <li>
             <button type="button">Вход</button>
+            <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="login" class="visually-hidden">Логин</label>
+            <input type="email" name="login" id="login" placeholder="email@example.com">
+            <label for="password" class="visually-hidden">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="********">
+            <div>
+              <button type="submit" value="Войти">Войти</button>
+              <div>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+            </div>
+            </form>
           </li>
-          <li><a href="#" area-label="Корзина">Корзина</a></li>
+          <li><a href="#">2 товара</a>
+            <div>
+              <ul>
+                <li>
+                  <button type="button" area-label="Удалить из корзины"></button> 
+                  <img src="#" width="50" height="50" alt="Миниатюра пломбира с апельсиновым джемом">
+                  <p>Пломбир с апельсиновым джемом</p>
+                  <span>1,5кгх200</span><span>300руб.</span>
+                </li>
+                <li>
+                  <button type="button" area-label="Удалить из корзины"></button> 
+                  <img src="#" width="50" height="50" alt="Миниатюра клубничного пломбира">
+                  <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+                  <span>1,5кгх300</span><span>450руб.</span>
+                </li>
+              </ul>
+              <div>
+                <p>Итого: 750 руб.</p>
+                <button type="submit">Оформить</button>
+              </div> 
+            </div>                              
+          </li>
         </ul>
       </nav>
       <div>
           <p>с 10 до 20, ежедневно</p>
-          <a href="tel:88124502525" area-label="телефон 88124502525">8 812 450-25-25</a>
+          <a href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </header>
     <main>
@@ -69,7 +107,7 @@
             <a href="#">Быстрый просмотр</a>
           </li>
           <li>
-            <img src="img/product-1-4.jpg" width="267" height="267" alt="Сливочный пломбир крем-брюле с кармельной подливкойа">
+            <img src="img/product-1-4.jpg" width="267" height="267" alt="Сливочный пломбир крем-брюле с кармельной подливкой">
             <h3>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </h3>
@@ -77,7 +115,7 @@
             <a href="#">Быстрый просмотр</a>
           </li>
           <li>
-            <img src="img/product-2-1.jpg" width="267" height="267" alt="Сливочный пломбир с брусничным ждемом">
+            <img src="img/product-2-1.jpg" width="267" height="267" alt="Сливочный пломбир с брусничным джемом">
             <h3>
               <a href="#">Сливочное с брусничным джемом</a>
             </h3>
@@ -144,7 +182,7 @@
             <!--Здесь будет список ссылок по страницам-->
           <ul>
             <li><a href="#">1</a></li>
-            <li><a>2</a></li>
+            <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
@@ -153,10 +191,10 @@
     </main>
     <footer>  
       <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Вконтакте</a></li>
+        <li><a href="#" aria-label="Глейси в Твиттере" class="visually-hidden"></a></li>
+        <li><a href="#" aria-label="Глейси в Инстаграме" class="visually-hidden"></a></li>
+        <li><a href="#" aria-label="Глейси в Фейсбуке" class="visually-hidden"></a></li>
+        <li><a href="#" aria-label="Глейси во Вконтакте" class="visually-hidden"></a></li>
       </ul>
       <ul>
         <li><a href="#">Для поставщиков</a></li>
