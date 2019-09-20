@@ -76,8 +76,41 @@
         <li>Сливочное морожение</li>
       </ul>
       <section>
-        <h2>Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <div>
+            <label for="sorting">Сортировка</label>
+            <select type="text" name="sorting" id="sorting">
+              <option>по популярности</option>
+            </select>
+            <div>
+              <label for="range-price">Цена 100 руб. - 500 руб.</label>
+              <input type="range" min="100" max="500" name="range-price" id="range-price">
+            </div>
+            <div>
+              <p>Жирность:</p>
+              <ul>
+                <li><label><input type="radio" name="fat">0&#37;</label></li>  
+                <li><label><input type="radio" name="fat" checked>до 10&#37;</label></li>  
+                <li><label><input type="radio" name="fat">до 30&#37;</label></li>  
+                <li><label><input type="radio" name="fat">выше 30&#37;</label></li>  
+              </ul>
+            </div>
+            <div>
+              <p>Наполнители:</p>
+              <ul>
+                <li><label><input type="checkbox" name="chocolate" checked>Шоколад</label></li>
+                <li><label><input type="checkbox" name="sugar" checked>Caхарные присыпки</label></li>
+                <li><label><input type="checkbox" name="fruit">Фрукты</label></li>
+                <li><label><input type="checkbox" name="syrup">Сиропы</label></li>
+                <li><label><input type="checkbox" name="jam">Джемы</label></li>
+              </ul>
+            </div>
+            <div>
+              <button type="submit">Применить</button>
+            </div>         
+          </div>
+        </form>     
       </section>
       <section>
         <h2 class="vissually-hidden">Вкусы сливочного мороженого</h2>
@@ -178,15 +211,18 @@
             <p>420<span>&#8381;</span><span>/кг</span></p>
             <a href="#">Быстрый просмотр</a>
           </li>                    
-          </ul>
-            <!--Здесь будет список ссылок по страницам-->
+        </ul>
+        <div>
           <ul>
+            <li><a href="#" area-label="Назад" class="visually-hidden"></a></li>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
+            <li><a href="#" area-label="Вперед" class="visually-hidden"></a></li>
           </ul>
+        </div>
       </section>
     </main>
     <footer>  
