@@ -81,29 +81,66 @@
           <div>
             <label for="sorting">Сортировка</label>
             <select type="text" name="sorting" id="sorting">
-              <option>по популярности</option>
+              <option selected>по популярности</option>
+              <option>сначала недорогие</option>
+              <option>сначала дорогие</option>
+              <option>по жирности</option>
             </select>
-            <div>
-              <label for="range-price">Цена 100 руб. - 500 руб.</label>
-              <input type="range" min="100" max="500" name="range-price" id="range-price">
-            </div>
-            <div>
+              <div>
+                <p>Цена <span>100 руб.</span> - <span>500 руб.</span></p>
+                <div>
+                  <div></div>
+                  <button type="button" aria-label="установить минимальную цену"></button>
+                  <button type="button" aria-label="установить максимальную цену"></button>                   
+                </div>
+                <label for="min-price">100руб.</label>
+                <input type="text" min="100" name="min-price" id="min-price">
+                <label for="max-price">500руб.</label>
+                <input type="text" max="500" name="max-price" id="max-price">
+              </div>
+              <div>
               <p>Жирность:</p>
               <ul>
-                <li><label><input type="radio" name="fat">0&#37;</label></li>  
-                <li><label><input type="radio" name="fat" checked>до 10&#37;</label></li>  
-                <li><label><input type="radio" name="fat">до 30&#37;</label></li>  
-                <li><label><input type="radio" name="fat">выше 30&#37;</label></li>  
+                <li>                  
+                  <input type="radio" name="fat" id="fat0"> 
+                  <label for="fat0">0&#37;</label> 
+                </li>
+                <li>
+                  <input type="radio" name="fat" id="fat10"checked>
+                  <label for="fat10">до 10&#37;</label></li>  
+                <li>                  
+                  <input type="radio" name="fat" id="fatless30">
+                  <label for="fatless30">до 30&#37;</label>
+                </li>  
+                <li>
+                  <input type="radio" name="fat" id="fatmore30">
+                  <label for="fatmore30">выше 30&#37;</label>
+                </li>  
               </ul>
             </div>
             <div>
               <p>Наполнители:</p>
               <ul>
-                <li><label><input type="checkbox" name="chocolate" checked>Шоколад</label></li>
-                <li><label><input type="checkbox" name="sugar" checked>Caхарные присыпки</label></li>
-                <li><label><input type="checkbox" name="fruit">Фрукты</label></li>
-                <li><label><input type="checkbox" name="syrup">Сиропы</label></li>
-                <li><label><input type="checkbox" name="jam">Джемы</label></li>
+                <li>
+                  <input type="checkbox" name="chocolate" id="chocolate" checked>
+                  <label for="chocolate">Шоколад</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="sugar" id="sugar" checked>
+                  <label for="sugar">Caхарные присыпки</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="fruit" id="fruit">
+                  <label for="fruit">Фрукты</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="syrup" id="syrup">
+                  <label for="syrup">Сиропы</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="jam" id="jam">
+                  <label for="jam">Джемы</label>
+                </li>
               </ul>
             </div>
             <div>
@@ -214,13 +251,13 @@
         </ul>
         <div>
           <ul>
-            <li><a href="#" area-label="Назад" class="visually-hidden"></a></li>
+            <li><a href="#" area-label="Вернуться на предыдущую страницу каталога" class="visually-hidden"></a></li>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
-            <li><a href="#" area-label="Вперед" class="visually-hidden"></a></li>
+            <li><a href="#" area-label="Перейти на следующую страницу каталога" class="visually-hidden"></a></li>
           </ul>
         </div>
       </section>
