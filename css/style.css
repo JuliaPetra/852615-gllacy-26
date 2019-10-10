@@ -7,7 +7,7 @@ body {
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
-    text-transform: uppercase;
+    text-transform: none;
 
     background-color: #849d8f;
   }
@@ -46,8 +46,9 @@ body {
 .technology {
     font-size: 16px;
     font-weight: 400;
-    color: #000000
-    background-image: url("img/bg-waffles.jpq") 
+    color: #000000;
+    background-image: url("../img/bg-waffles.jpg");
+    background-repeat: no-repeat;
 
 }
 .technology p {
@@ -58,4 +59,27 @@ body {
 .list-technology {
     list-style: none;
 
+}
+
+.news {
+    background-image: url("../img/bg-strawberry.jpg");
+    background-repeat: no-repeat;
+    color: #000000;
+}
+.news h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.news a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.subscribe {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-image: url("../img/bg-mail-1.jpg")
 }
