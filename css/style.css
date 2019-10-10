@@ -40,15 +40,14 @@ body {
   .site-navigation a:focus,
   .user-navigation a:hover,
   .user-navigation a:focus {
-      color: #000000;
+  color: #000000;
   background-color: #ffffff;
 }
 .technology {
     font-size: 16px;
     font-weight: 400;
     color: #000000
-    background-image: url("img/bg-waffles.jpq")
-   
+    background-image: url("img/bg-waffles.jpq") 
 
 }
 .technology p {
