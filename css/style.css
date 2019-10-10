@@ -2,15 +2,61 @@ body {
     margin: 0;
     padding: 0;
   
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
 
-    background-color: #000000;
-    background-image: url("img/bg.png");
-    background-position: top center;
-    background-repeat: no-repeat;
+    background-color: #849d8f;
   }
+  a {
+    text-decoration: none;
+  }
+  
+  .main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #849d8f;
+  }
+
+  .site-navigation,
+  .user-navigation {
+    list-style: none;
+  }
+
+  .user-navigation {
+      background-color: #a1b4a9;
+    font-weight: 400;
+  }
+  .site-navigation a,
+  .user-navigation a {
+  color: #ffffff;
+  }
+
+  .site-navigation a:hover,
+  .site-navigation a:focus,
+  .user-navigation a:hover,
+  .user-navigation a:focus {
+      color: #000000;
+  background-color: #ffffff;
+}
+.technology {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000
+    background-image: url("img/bg-waffles.jpq")
+   
+
+}
+.technology p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.list-technology {
+    list-style: none;
+
+}
