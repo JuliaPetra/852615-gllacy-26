@@ -14,35 +14,134 @@ body {
   a {
     text-decoration: none;
   }
+
+
   
   .main-navigation {
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
     background-color: #849d8f;
-  }
-
-  .site-navigation,
-  .user-navigation {
     list-style: none;
   }
 
-  .user-navigation {
+  .site-navigation,
+  .user-navigation,
+  .type-navigation {
+    list-style: none;
+  }
+
+ .search,
+ .enter,
+ .basket {
       background-color: #a1b4a9;
     font-weight: 400;
+    border-radius: 15px;
+  }
+  .full-basket {
+      color: #000000;
+      background-color: #f7f6f3;
+      border-radius: 15px;
+  }
   }
   .site-navigation a,
   .user-navigation a {
   color: #ffffff;
   }
 
+  .type-navigation {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 400;
+  }
+
+  .type-navigation .new {
+      font-weight: 700;
+  }
   .site-navigation a:hover,
   .site-navigation a:focus,
   .user-navigation a:hover,
   .user-navigation a:focus {
   color: #000000;
   background-color: #ffffff;
+  border-radius: 10px;
 }
+
+.site-navigation:active {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #d07058;
+    border-radius: 10px;
+}
+.type-navigation a:hover,
+.type-navigation a:focus {
+    background-color: #fbded7;
+}
+
+.info p {
+    font-size: 14px;
+}
+.info a {
+    font-size: 22px;
+    color: #ffffff
+}
+.promomix {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.promomix li {
+    font-size: 60px;
+    list-style: none;
+}
+
+.promomix a {
+    font-size: 32px;
+}
+.promo {
+    color: #ffffff;
+    font-weight: 700;
+}
+.promo h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.promo p {
+    font-size: 18px;
+}
+
+.promo .first {
+    background-image: url("../img/bg-raspberry.jpg");
+    background-repeat: no-repeat;
+   }
+.promo .second {
+    background-image: url("../img/bg-chocolate.jpg");
+    background-repeat: no-repeat;
+    }
+
+.hit a {    
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.hit img {
+    border-radius: 150px;
+}
+
+.hit p {
+    font-size: 45px;
+    font-weight: 700;
+}
+.hit span {
+    font-size: 45px;
+    font-weight: 700;
+}
+
 .technology {
     font-size: 16px;
     font-weight: 400;
@@ -81,5 +180,59 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #000000;
-    background-image: url("../img/bg-mail.jpg")
+    background-image: url("../img/bg-mail.jpg");
     background-repeat: no-repeat;
+}
+
+.button {
+    font: inherit;
+  
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;  
+    background-color: #ee5c3e;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .button:hover {
+    background-color: #f17d65;
+    }
+
+  .button:focus {
+    background-color: #f17b64;
+  }
+  .button:active {
+    background-color: #da5037;
+  }
+
+
+  
+.footer-info {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.footer-info li:first-child {
+    font-weight: 700;
+}
+
+.footer-info a {
+    color: #ffffff;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    font-weight: 400;
+}
+.footer-copyright a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+a:hover,
+a:focus {
+    color: #ffbc9e;
+    text-decoration: underline;
+}
