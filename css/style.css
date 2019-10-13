@@ -8,11 +8,11 @@ body {
     color: #ffffff;
     text-transform: none;
     background-color: #849d8f;
-  }
+}
 
 .body-ul ul {
     list-style: none;
-  }
+}
 
 .body-link a {
     color: #ffffff;
@@ -32,14 +32,14 @@ body {
     color: #ffffff;
     background-color: #849d8f;
     list-style: none;
-  }
+}
 
 .search,
 .enter,
 .basket {
     background-color: #a1b4a9;
     font-weight: 400;
-  }
+}
 
 .enter {
     display: none;
@@ -48,7 +48,7 @@ body {
     color: #000000;
     background-color: #f7f6f3;
     text-decoration: none;
-  }
+}
 
 .basket-popup {
     display: none;
@@ -60,14 +60,14 @@ body {
 .site-navigation a,
 .user-navigation a {
     color: #ffffff;
-  }
+}
 
 .type-navigation {
     color: #000000;
     font-size: 14px;
     font-weight: 400;
     display: none;
-  }
+}
 
 .type-navigation a {
     text-decoration: none;
@@ -75,7 +75,7 @@ body {
 
 .type-navigation .new {
     font-weight: 700;
-  }
+}
 
 
 .user-navigation a:hover,
@@ -83,7 +83,7 @@ body {
     color: #000000;
     background-color: #ffffff;
     border-radius: 10px;
-  }
+}
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -193,7 +193,7 @@ body {
     text-decoration: none;
 }
 
- .promo a:active {
+.promo a:active {
     text-align: center;
     color: #ffffff;
     vertical-align: middle;  
@@ -203,9 +203,6 @@ body {
     text-decoration: none;
 }
 
-.hit {
-    
-}
 .hit a {    
     font-size: 16px;
     font-weight: 500;
@@ -346,5 +343,13 @@ h1 {
     font-weight: 700;
 }
 .sorting {
+    display: none;
+}
+
+.paginator {
+    display: none;
+}
+
+.catalog a:last-child {
     display: none;
 }
