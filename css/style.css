@@ -44,11 +44,15 @@ body {
 .enter {
     display: none;
 }
-.full-basket {
+.full-basket a {
     color: #000000;
     background-color: #f7f6f3;
+    text-decoration: none;
   }
 
+.basket-popup {
+    display: none;
+}
 .search-example {
     display: none;
 }
@@ -163,7 +167,7 @@ body {
     text-align: center;
     color: #ffffff;
     vertical-align: middle;  
-    background-color: #ee5c3e
+    background-color: #ee5c3e;
     border: none;
     border-radius: 15px;
     text-decoration: none;
@@ -187,7 +191,7 @@ body {
     border: none;
     border-radius: 15px;
     text-decoration: none;
- }
+}
 
  .promo a:active {
     text-align: center;
@@ -197,10 +201,10 @@ body {
     border: none;
     border-radius: 15px;
     text-decoration: none;
- }
+}
 
 .hit {
-    display: none;
+    
 }
 .hit a {    
     font-size: 16px;
@@ -330,4 +334,17 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%); 
     margin: -1px;
-  }
+}
+
+.catalog-nav {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+.sorting {
+    display: none;
+}
