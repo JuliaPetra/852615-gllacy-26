@@ -10,17 +10,17 @@ body {
     background-color: #849d8f;
 }
 
-.body-ul ul {
+.website ul {
     list-style: none;
 }
 
-.body-link a {
+.website a {
     color: #ffffff;
     text-decoration: underline;
 }
 
-.body-link a:hover,
-.body-link a:focus {
+.website a:hover,
+.website a:focus {
     color: #f17b64;
     text-decoration: underline;
 }
@@ -130,7 +130,7 @@ body {
     display: none;
 }
 
-.promomix li {
+.promomix ul {
     font-size: 60px;
     list-style: none;
 }
@@ -219,7 +219,7 @@ body {
     font-weight: 700;
 }
 
-.kg {
+.hit span {
     font-size: 30px;
     font-weight: 400;
 }
@@ -239,6 +239,25 @@ body {
 .list-technology {
     list-style: none;
 }
+
+.list-technology li:first-child {
+    background-image: url("../img/icons/ice-cream.svg");
+    background-repeat: no-repeat;
+}
+.list-technology li:nth-child(2) {
+    background-image: url("../img/icons/eco.svg");
+    background-repeat: no-repeat;
+}
+
+.list-technology li:nth-child(3) {
+    background-image: url("../img/icons/cow.svg");
+    background-repeat: no-repeat;
+}
+.list-technology li:last-child {
+    background-image: url("../img/icons/thermometer.svg");
+    background-repeat: no-repeat;
+}
+
 
 .news {
     background-image: url("../img/bg-strawberry.jpg");
@@ -269,6 +288,7 @@ body {
 .button {
     font: inherit;  
     text-align: center;
+    cursor: pointer;
     color: #ffffff;
     vertical-align: middle;  
     background-color: #ee5c3e;
@@ -276,14 +296,10 @@ body {
     border-radius: 15px;
 }
   
-.button:hover {
-    color:#ffffff;
-    background-color: #f17d65;
-}
-
+.button:hover,
 .button:focus {
     color:#ffffff;
-    background-color: #f17b64;
+    background-color: #f17d65;
 }
 
 .button:active {
@@ -347,9 +363,5 @@ h1 {
 }
 
 .paginator {
-    display: none;
-}
-
-.catalog a:last-child {
     display: none;
 }
