@@ -51,7 +51,6 @@ header .user-navigation a {
     background-color: #da5037;
 }
 
-
 .main-navigation {
     font-size: 16px;
     line-height: 20px;
@@ -124,6 +123,7 @@ header .user-navigation a {
     background-color: #f7f6f3;
     text-decoration: none;
 }
+
 .full-basket {
     background-image: url("../img/icons/basket-red.svg");
     background-repeat: no-repeat;
