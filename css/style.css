@@ -19,10 +19,6 @@ body {
     text-decoration: underline;
 }
 
-header .user-navigation a {
-    text-decoration: none;
-}
-
 .website a:hover,
 .website a:focus {
     color: #f17b64;
@@ -124,14 +120,6 @@ header .user-navigation a {
     text-decoration: none;
 }
 
-.full-basket {
-    background-image: url("../img/icons/basket-red.svg");
-    background-repeat: no-repeat;
-    color: #000000;
-    background-color: #f7f6f3;
-    text-decoration: none;
-}
-
 .basket-popup {
     display: none;
 }
@@ -185,6 +173,19 @@ header .user-navigation a {
 .type-navigation a:hover,
 .type-navigation a:focus {
     background-color: #fbded7;
+}
+
+.full-basket {
+    background-image: url("../img/icons/basket-red.svg");
+    background-repeat: no-repeat;
+    color: #000000;
+    background-color: #f7f6f3;
+    border-radius: 15px;
+    text-decoration: none;
+}
+ 
+.user-navigation .full-basket {
+    text-decoration: none;
 }
 
 .info p {
