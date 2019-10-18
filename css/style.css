@@ -25,6 +25,28 @@ body {
     text-decoration: underline;
 }
 
+button {
+    font: inherit;  
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    vertical-align: middle;  
+    background-color: #ee5c3e;
+    border: none;
+    border-radius: 15px;
+}
+  
+.button:hover,
+.button:focus {
+    color:#ffffff;
+    background-color: #f17d65;
+}
+
+.button:active {
+    color:#ffffff;
+    background-color: #da5037;
+}
+
 
 .main-navigation {
     font-size: 16px;
@@ -34,19 +56,69 @@ body {
     list-style: none;
 }
 
+.user-navigation {
+    font-size: 14px;
+    font-weight: 500;
+}
+.entrance {
+    background-image: url("../img/icons/entrance.svg");
+    background-repeat: no-repeat;
+    background-color: #a1b4a9;
+}
+
+.entrance:hover,
+.entrance:focus {
+    background-image: url("../img/icons/entrance-black.svg");
+    background-repeat: no-repeat;
+    background-color: #f8f7f4;
+    color: #000000;
+}
+
+.search-icon {
+    background-image: url("../img/icons/loupe.svg");
+    background-repeat: no-repeat;
+    background-color: #a1b4a9;
+}
+.search-icon:hover,
+.search-icon:focus {
+    background-image: url("../img/icons/loupe-black.svg");
+    background-repeat: no-repeat;
+    background-color: #f8f7f4;
+    color: #000000;
+}
+
 .search,
-.enter,
+.enter-form,
 .basket {
     background-color: #a1b4a9;
     font-weight: 400;
+    text-decoration: none;
 }
 
-.enter {
+.enter-form {
     display: none;
 }
-.full-basket a {
+
+.basket {
+    background-image: url("../img/icons/basket.svg");
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.basket:hover,
+.basket:focus {    
+    text-decoration: none;
+
+}
+.full-basket {
+    background-image: url("../img/icons/basket-red.svg");
+    background-repeat: no-repeat;
     color: #000000;
     background-color: #f7f6f3;
+    text-decoration: none;
+}
+
+.full-basket  {
     text-decoration: none;
 }
 
@@ -285,28 +357,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.button {
-    font: inherit;  
-    text-align: center;
-    cursor: pointer;
-    color: #ffffff;
-    vertical-align: middle;  
-    background-color: #ee5c3e;
-    border: none;
-    border-radius: 15px;
-}
-  
-.button:hover,
-.button:focus {
-    color:#ffffff;
-    background-color: #f17d65;
-}
-
-.button:active {
-    color:#ffffff;
-    background-color: #da5037;
-}
-
 .footer-info {
     color: #ffffff;
     font-size: 13px;
@@ -364,4 +414,20 @@ h1 {
 
 .paginator {
     display: none;
+}
+
+.footer-social svg {
+    fill: #e6ebe9; 
+   stroke: #c2cec7;
+   }
+
+.footer-social svg:hover,
+.footer-social svg:focus {
+    fill: #ffffff;
+    stroke: #dae2de;
+}
+
+.footer-social svg:active {
+    fill: #e9e9e9;
+    stroke: #dae2de;
 }
