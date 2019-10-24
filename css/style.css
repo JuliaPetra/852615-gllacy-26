@@ -477,6 +477,8 @@ h1 {
     width: 970px;
     margin-left: 10px;
     padding: 0 10px;
+
+    border: solid 1px red;
     
 }
 .main-navigation {
@@ -509,6 +511,7 @@ h1 {
     min-height: 75px;
     justify-content: space-between;
     align-items: center;
+
     border: solid 1px red;
 }
 
@@ -528,10 +531,9 @@ h1 {
 }
 
 .info {
-    display: flex;
-   
+    display: flex;   
     flex-direction: column;
-   width: 169px;
+    width: 169px;
   
     border: solid 1px red;
 }
