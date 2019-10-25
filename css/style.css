@@ -600,6 +600,7 @@ header {
 
 .list-technology li {
     width: 530px;
+    margin-left: 20px;
 }
 
 .list-technology li:nth-child(3) {
@@ -627,8 +628,8 @@ header {
 }
 
 .adress {
-        width: 1200px;
-    margin: 0 auto;
+    width: 1200px;
+   
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
     margin-bottom: 40px;
