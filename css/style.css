@@ -629,6 +629,7 @@ body {
 .footer-main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 1146px;
     min-height: 105px;
@@ -660,10 +661,16 @@ body {
 
 .footer-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
     margin: 0 auto;
+    width: 334px;
+}
+
+.footer-info li {
+    width: 160px;
+    padding: 0;
 }
 
 .feedback {
