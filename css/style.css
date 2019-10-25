@@ -663,6 +663,10 @@ header {
     margin: 200 auto;
 }
 
+.footer-social {
+    width: 186px;
+    justify-content: space-between;
+}
 .footer-info {
     display: flex;
     flex-direction: column;
