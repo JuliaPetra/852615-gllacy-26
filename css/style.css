@@ -396,9 +396,6 @@ body {
     text-decoration: underline;
 }
 
-
-
-
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -541,11 +538,7 @@ body {
     outline: 1px solid red
 }
 
-.info p {
-    marg
-}
-
-header {
+.header {
     margin: 0 auto;
 }
 
@@ -560,7 +553,6 @@ header {
 
 .second {
     display: flex;
-    
     min-height: 230px;
     margin: 0 auto;
 
@@ -629,12 +621,10 @@ header {
 
 .adress {
     width: 1200px;
-   
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
     margin-bottom: 40px;
- 
-}
+ }
 
 .footer-main {
     display: flex;
@@ -643,7 +633,6 @@ header {
     width: 1146px;
     min-height: 105px;
     justify-content: space-between;
-   
 }
 
 .footer-catalog {
@@ -668,6 +657,7 @@ header {
     width: 186px;
     justify-content: space-between;
 }
+
 .footer-info {
     display: flex;
     flex-direction: column;
