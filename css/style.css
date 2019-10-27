@@ -337,14 +337,26 @@ body {
 }
 
 .news {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-image: url("../img/bg-strawberry.jpg");
     background-repeat: no-repeat;
     color: #000000;
+    width: 560px;
+    border-radius: 15px;
+    padding-left: 20px;
+    margin: 40px;
+    
+    
 }
 
 .news h2 {
     font-size: 16px;
     font-weight: 500;
+    padding-top: 27px;
+    
 }
 
 .news a {
@@ -352,14 +364,29 @@ body {
     font-weight: 700;
     color: #000000;
     text-decoration: underline;
+    
+    
 }
 
 .subscribe {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     font-size: 16px;
     font-weight: 400;
     color: #000000;
     background-image: url("../img/bg-mail.jpg");
     background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 560px;
+    padding-left: 27px;
+    padding-right: 27px;
+    
+}
+
+.subscribe form {
+    margin-left: auto;
 }
 
 .footer-info {
@@ -558,8 +585,8 @@ body {
 }
 
 .block h2 {
- margin: 0;
- padding;: 0;      
+    margin: 0;
+    padding;: 0;      
 }
 
 .block a { 
@@ -568,7 +595,7 @@ body {
     padding: 10px 23px 12px;  
     font-size: 18px;
     margin-left: auto;
-   margin-top: 20px;  
+    margin-top: 20px;  
 }
 
 .rasberry {
