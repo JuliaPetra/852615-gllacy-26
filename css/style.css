@@ -304,6 +304,7 @@ body {
     color: #000000;
     background-image: url("../img/bg-waffles.jpg");
     background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
 .technology p {
@@ -607,21 +608,13 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
+    max-height: 306px; 
     margin: 0 auto;
 }
 
-.list-technology li {
+.list-technology li {    
     width: 530px;
-    margin-left: 20px;
-}
-
-.list-technology li:nth-child(3) {
-    order: -1;
-}
-
-.list-technology li:nth-child(4) {
-    order: -1;
+    margin-left: 20px;     
 }
 
 .wrapper {
@@ -713,6 +706,6 @@ body {
     display: none;
 }
 
-.catalog-nav ul {
-    margin: 0 auto;
+.technology-msg {
+    padding-left: 20px;
 }
