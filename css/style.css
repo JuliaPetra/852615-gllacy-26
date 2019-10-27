@@ -16,6 +16,8 @@ body {
     padding: 0;
 }
 
+
+
 .website a {
     color: #ffffff;
     text-decoration: underline;
@@ -234,16 +236,6 @@ body {
 
 .promo p {
     font-size: 18px;
-}
-
-.promo .first {
-    background-image: url("../img/bg-raspberry.jpg");
-    background-repeat: no-repeat;
-}
-
-.promo .second {
-    background-image: url("../img/bg-chocolate.jpg");
-    background-repeat: no-repeat;
 }
 
 .promo .button {
@@ -542,22 +534,51 @@ body {
     margin: 0 auto;
 }
 
-.promo {
+.promo {    
     display: flex;
     flex-direction: row;
-    width: 1200px;
-    margin: 0 auto;
-    justify-content: space-between;
-    min-height: 230px;
+    width: 1146px;
+    margin: 40px auto;
+    justify-content: space-between;   
 }
 
-.second {
+.block {
+    box-sizing: border-box;
     display: flex;
-    min-height: 230px;
-    margin: 0 auto;
-
+    flex-direction: column;
+    flex-wrap: wrap;      
+    border-radius: 20px;
+    width: 560px;
+    padding-top: 24px;
+    padding-right: 21px;
+    padding-bottom: 24px;
+    padding-left: 20px;        
+    justify-content: space-between;
 }
 
+.block h2 {
+ margin: 0;
+ padding;: 0;      
+}
+
+.block a { 
+    display: flex;  
+    border-radius: 30px;
+    padding: 10px 23px 12px;  
+    font-size: 18px;
+    margin-left: auto;
+   margin-top: 20px;  
+}
+
+.rasberry {
+    background-image: url("../img/bg-raspberry.jpg");
+    background-repeat: no-repeat;
+} 
+
+.chocolate {
+    background-image: url("../img/bg-chocolate.jpg");
+    background-repeat: no-repeat;
+}
 .hit .hits {
     display: flex;
     flex-direction: row;
@@ -639,11 +660,12 @@ body {
 .footer-catalog {
     display: flex;
     flex-direction: row;
-    margin-top: 140px;
+    
     width: 1146px;
     min-height: 200px;
     justify-content: space-between;
-
+    margin: auto;
+    margin-top: 140px;
 }
 
 .footer-social,
@@ -678,11 +700,19 @@ body {
     display: none;
 }
 
-.catalog {
+.hit .catalog {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 1200px;
     justify-content: space-around;
+    margin: 0 auto;
+}
+
+.fast-view {
+    display: none;
+}
+
+.catalog-nav ul {
     margin: 0 auto;
 }
