@@ -396,7 +396,6 @@ body {
     margin-right: auto;
     padding-left: 27px;
     width: 1200px;
-
 }
 .catalog-nav a {
     color: #ffffff;
@@ -544,11 +543,9 @@ body {
     flex-wrap: wrap;      
     border-radius: 20px;
     width: 560px;
-    padding-top: 24px;
-    padding-right: 21px;
-    padding-bottom: 24px;
-    padding-left: 20px;        
+    padding: 24px 21px 24px 20px;      
     justify-content: space-between;
+    background-repeat: no-repeat;
 }
 
 .block h2 {
@@ -567,12 +564,10 @@ body {
 
 .rasberry {
     background-image: url("../img/bg-raspberry.jpg");
-    background-repeat: no-repeat;
-} 
+  } 
 
 .chocolate {
     background-image: url("../img/bg-chocolate.jpg");
-    background-repeat: no-repeat;
 }
 
 .hit .hits {
