@@ -19,16 +19,16 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li>
+          <li class="hoverable">
             <button type="button" class="button button-search"></svg></button>
-            <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <form class="if-hover search" action="https://echo.htmlacademy.ru" method="get">
               <label for="search" class="visually-hidden">Поиск</label>
               <input class="search-example" type="text" name="search" id="search" placeholder="крем-брюле">              
             </form>
           </li> 
-          <li>
+          <li class="hoverable">
             <button type="button"class="button entrance">Вход</button>
-            <form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="if-hover enter-form" action="https://echo.htmlacademy.ru" method="post">
               <label for="login" class="visually-hidden">Логин</label>
               <input type="email" name="login" id="login" placeholder="email@example.com">
               <label for="password" class="visually-hidden">Пароль</label>
@@ -42,8 +42,8 @@
               </div>
             </form>
           </li>
-          <li><a class="button full-basket" href="#">2 товара</a>
-            <div class="basket-popup">
+          <li class="hoverable"><a class="button full-basket" href="#">2 товара</a>
+            <div class="if-hover basket-form">
               <ul>
                 <li>
                   <button type="button" area-label="Удалить из корзины"></button> 

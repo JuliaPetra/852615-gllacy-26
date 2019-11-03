@@ -79,7 +79,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     width: 400px;
-    margin-left: 20px;
+    
     padding: 10px;   
     list-style: none;
     justify-content: space-between;
@@ -110,7 +110,7 @@ body {
     text-decoration: none;
     background-color: #f7f6f3;
     border-radius: 10px;
-    width: 380px;
+    
     margin: 0;    
 }
 
@@ -149,6 +149,7 @@ body {
     text-decoration: none;
     display: none;
     border-radius: 5px;
+    padding: 0;
     width: 144px;
 }
 
@@ -192,14 +193,15 @@ body {
     background-color: #f6b5a5;
 }
 
-.type-navigation .new {
+.type-navigation .new {    
+    width: 100%;
     font-weight: 700;
     border-bottom: 1px solid #9bafa3;   
 }
 
 .type-navigation li {
     box-sizing: border-box;
-    width: 144px;
+    
 }
 .user-navigation .button-search {
     color: #dae2de;
@@ -243,6 +245,29 @@ body {
     display: none;
 }
 
+.entrance {
+    position: relative;
+}
+
+.if-hover {
+    display: none; 
+}
+
+.hoverable {
+    position: relative;
+    min-height: 50px;
+}
+
+.hoverable:hover .if-hover {
+    display: block;
+    position: absolute;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    top: 45px;  
+    right: 0px;
+    padding: 0;
+}
+
 .basket {
     color: #ffffff;
     background-image: url("../img/icons/basket.svg");
@@ -251,15 +276,24 @@ body {
     background-position: 17px center;
     border-radius: 30px;
     padding: 11px 20px 11px 45px;      
+    min-height: 50px;
 }
 
-.basket-popup {
+.basket-form {
     display: none;
 }
 
-.search-example {
-    display: none;
+.search {
+    position: absolute;
+    width: 340px;
+    height: 86px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #f8f7f4;
+    margin: 0;
+    padding: 20px 14px;
 }
+
 
 .user-navigation a:hover,
 .user-navigation a:focus {
@@ -270,6 +304,7 @@ body {
 }
 
 .user-navigation .full-basket {
+    position: absolute;
     background-image: url("../img/icons/basket-red.svg");
     background-repeat: no-repeat;
     background-position: 17px center;
@@ -290,39 +325,6 @@ body {
     border-radius: 30px;
     text-decoration: none;
     padding: 11px 20px 11px 45px;  
-}
-
-.promomix {
-    display: flex;
-    flex-direction: column;
-    background-image: url("../img/ice-cream-1.png");
-    background-repeat: no-repeat;
-    color: #ffffff;
-    font-weight: 700;
-    text-align: center;
-    width: 1146px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.promomix ul {
-    font-size: 60px;
-    list-style: none;
-    padding-top: 322px;
-    padding-bottom: 50px;
-}
-
-.promomix-1 {
-    
-}
-
-.promomix-2,
-.promomix-3 {
-    display: none;
-}
-
-.promomix a {
-    font-size: 32px;
 }
 
 .promo {
@@ -570,15 +572,15 @@ padding-left: 5px;
     flex-wrap: wrap;
     margin-bottom: 560px;
     height: 112px;
-    width: 1200px;
-    padding-left: 27px;
-    padding-right: 27px;    
+    width: 1146px;
+    padding: 0;  
 }
 
 .main-navigation {
     box-sizing: border-box;
     display: flex;
     width: 1146px;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
@@ -595,10 +597,11 @@ padding-left: 5px;
 
 
 .main-navigation .user-navigation {
+    box-sizing: border-box;
     display: flex;   
     flex-direction: row;
     flex-wrap: wrap;
-    width: 275px;    
+    width: 262px;    
     align-items: center;
     justify-content: space-between;
     margin-left: auto;
