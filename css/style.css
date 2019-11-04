@@ -242,8 +242,34 @@ body {
 }
 
 .enter-form {
-    display: none;
+    display: none;   
+}
+
+.enter {
     display: flex;
+    flex-direction: row;    
+    flex-wrap: nowrap;
+    width: 240px;
+    margin: 0;
+    padding: 0;  
+    max-height: 70px;
+    align-items: center;
+
+}
+.enter .button {
+    padding: 15px 26px;
+    width: 101px;
+    font-size: 18px;
+}
+
+.registration {
+    flex-direction: column; 
+  width: 140px;
+  padding: 5px 20px;
+  margin: 0;
+}
+.registration a {
+    color: #000000;
 }
 
 .if-hover {
@@ -254,26 +280,55 @@ body {
     position: relative;  
 }
 
+.user-navigation li {
+    padding-bottom: 25px;
+}
 .user-navigation input {
-    margin: 20px auto;
+    box-sizing: border-box;
+    height: 43px;
+    margin: 0;
+   
     padding-left: 15px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    
     border-radius: 5px;
     color: #d3d3d2;
     border: 1px solid #d3d3d2;
 }
 
-.search {
-    width: 342px;
+input:hover,
+input:focus {
+
+border: 2px solid #d3d3d2;
+
+
 }
-.search .input {
+
+.enter-form input {
+    margin-bottom: 20px;
+    width: 240px;
+}
+
+.search {
+    width: 344px;
+    min-height: ;
+}
+
+.search-example {
     width: 310px;
 }
 
-.enter-form .input {
-    width: 240px;
+input::placeholder {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
+
+.enter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 
 .hoverable:hover .if-hover {
     display: flex;
@@ -298,7 +353,7 @@ body {
     text-decoration: none;
     background-position: 17px center;
     border-radius: 30px;
-    padding: 12px 20px 12px 45px;      
+    padding: 13px 20px 13px 45px;      
     min-height: 50px;
 }
 
@@ -337,7 +392,8 @@ body {
     background-color: #f7f6f3;
     border-radius: 30px;
     text-decoration: none;
-    padding: 12px 20px 12px 45px;  
+    padding: 13px 20px 13px 45px;  
+    
 }
 
 .user-navigation .full-basket:hover,
@@ -349,7 +405,7 @@ body {
     background-color: #f7f6f3;
     border-radius: 30px;
     text-decoration: none;
-    padding: 11px 20px 11px 45px;  
+    padding: 13px 20px 13px 45px;  
 }
 
 .promo {
@@ -550,14 +606,46 @@ body {
 padding-left: 5px;
 }
 
+.filter {
+    box-sizing: border-box;
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 860px;
+    margin: 0;
+    padding: 0;
+    min-height: 163px;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.sorting,
+.price,
+.fat,
+.toppings {
+    display: flex;
+    flex-direction: row;
+    background-color: #a8bab0;
+   
+}
+
 .sorting {
-    display: none;
+    width: 194px;
 }
 
-.paginator {
-    display: none;
+.price {
+    width: 220px;
 }
 
+.fat {
+    width: 415px;
+}
+
+.toppings {
+    width: 704px;
+}
 .social svg {
     fill: #e6ebe9; 
     stroke: #c2cec7;
@@ -909,19 +997,21 @@ padding-left: 5px;
     flex-direction: column;
     flex-wrap: wrap;
     position: fixed;
-    background-color: #f8f7f4;
-    width: 480px;
-    top: 338px;
+    top: 50%;
     left: 50%;
-    margin-left: -250px;
+    transform: translate(-50%, -50%);
+    background-color: #f8f7f4;    
+    width: 480px;  
     border-radius: 10px;
     padding: 22px;
-    }
+}
 
 .close {
     position: absolute;
-    top: 10px;
-     right: 10px;
+    background-image: url("../img/icons/cross-big.svg");
+    background-repeat: no-repeat;
+    top: 15px;
+    right: 15px;
     height: 16px;
     width: 16px;  
     background-color: #f8f7f4;
@@ -929,30 +1019,12 @@ padding-left: 5px;
     cursor: pointer;
 } 
 
-.feedback h2 {
+.feedback-form p {
+    color: #000000; 
     font-size: 24px;
     font-weight: 500;
     margin: 0;
     margin-bottom: 27px;
-}
-
-.close::before,
-.close::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: -5px;
-  width: 19px;
-  height: 2px;
-  background-color: #000000;
-}
-
-.close::before {
-    transform: rotate(45deg);
-}
-  
-.close::after {
-    transform: rotate(-45deg);
 }
 
 .feedback-form input {
@@ -963,8 +1035,14 @@ padding-left: 5px;
     border: 1px solid #aebeb5;
 }
 
-.textarea {
-    min-height: 155px;
+textarea {
+    height: 155px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 15px;
+    resize: none;
 }
 
 .bold-row-1,
@@ -979,23 +1057,14 @@ padding-left: 5px;
     text-decoration: none;
 }
 
-.feedback-form .button {
+.feedback-button {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
     padding: 12px 25px;
     margin: 0;
+    margin-top: 20px;
     margin-left: auto;
-}
-
-.feedback .button {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 12px 25px;
-    margin: 0;
-    margin: 20px auto;
-  
 }
 
 .hit .catalog {
@@ -1086,3 +1155,85 @@ padding-left: 5px;
 .catalog-item:hover .fast-view {
     display: block;
 }
+
+.catalog {
+    margin-bottom: 50px;
+}
+
+.paginator {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 1146px;   
+    margin: 0 auto;
+    padding: 0;    
+}
+
+.pagination-list {
+    display: flex;
+    flex-direction: row;
+    width: 190px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;  
+    list-style: none;
+}
+
+.pagination-list a {
+    padding: 6px 11px;
+    text-decoration: none;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {  
+    background-color: #9db1a5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination-list .left:hover,
+.pagination-list .left:focus,
+.pagination-list .right:hover,
+.pagination-list .right:focus {  
+    background-color: transparent;
+    border-radius: 0;    
+    cursor: pointer;
+}
+
+.pagination-list a:active {  
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination-list li {   
+     text-decoration: none;
+ }
+
+.first-page a {
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #000000;    
+}
+
+.pagination-list li:first-child {
+    background-image: url("../img/icons/icon-right-small.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(180deg);
+    padding-right: 15px;
+    margin-bottom: 4px;
+    
+}
+
+.pagination-list li:last-child {
+    background-image: url("../img/icons/icon-right-small-white.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-left: 15px;    
+    margin-bottom: 4px;
+}
+

@@ -33,9 +33,9 @@
               <input type="email" name="login" id="login" placeholder="email@example.com">
               <label for="password" class="visually-hidden">Пароль</label>
               <input type="password" name="password" id="password" placeholder="********">
-              <div>
-                <button type="submit" value="Войти" class="button">Войти</button>
-                <div>
+              <div class="enter-form enter">
+                <button type="submit" class="button">Войти</button>
+                <div class="registration">
                   <a href="#">Забыли пароль?</a>
                   <a href="#">Новая регистрация</a>
                 </div>
@@ -82,7 +82,7 @@
       </div>    
       <section>
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <div class="sorting">
             <label for="sorting">Сортировка</label>
             <select type="text" name="sorting" id="sorting">
@@ -91,7 +91,7 @@
               <option>сначала дорогие</option>
               <option>по жирности</option>
             </select>
-              <div>
+              <div class="price">
                 <p>Цена <span>100</span>руб. - <span>500</span>руб.</p>
                 <div>
                   <div></div>
@@ -103,7 +103,7 @@
                 <label for="max-price" area-label="Максимальня цена" class="visually-hidden">500руб.</label>
                 <input type="text" max="500" name="max-price" id="max-price">
               </div>
-              <div>
+              <div class="fat">
               <p>Жирность:</p>
               <ul>
                 <li>                  
@@ -123,7 +123,7 @@
                 </li>  
               </ul>
             </div>
-            <div>
+            <div class="toppings">
               <p>Наполнители:</p>
               <ul>
                 <li>
@@ -149,7 +149,7 @@
               </ul>
             </div>
             <div>
-              <button type="submit">Применить</button>
+              <button class="button" type="submit">Применить</button>
             </div>         
           </div>
         </form>     
@@ -255,14 +255,14 @@
           </li>                    
         </ul>
         <div class="paginator">
-          <ul>
-            <li><a href="#" area-label="Вернуться на предыдущую страницу каталога" class="visually-hidden"></a></li>
-            <li><a href="#">1</a></li>
+          <ul class="pagination-list">
+            <li><a class="left" href="#" area-label="Вернуться на предыдущую страницу каталога"></a></li>
+            <li class="first-page"><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#" area-label="Перейти на следующую страницу каталога" class="visually-hidden"></a></li>
+            <li class="last-page"><a href="#">5</a></li>
+            <li><a class="right" href="#" area-label="Перейти на следующую страницу каталога"></a></li>
           </ul>
         </div>
       </section>
